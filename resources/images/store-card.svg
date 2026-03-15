@@ -1,0 +1,50 @@
+<svg width="320" height="220" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="store-bg" x1="20" y1="10" x2="300" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" />
+      <stop offset="0.52" stop-color="#1E293B" />
+      <stop offset="1" stop-color="#4338CA" />
+    </linearGradient>
+    <linearGradient id="store-accent" x1="90" y1="66" x2="210" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA" />
+      <stop offset="1" stop-color="#38BDF8" />
+    </linearGradient>
+    <filter id="store-shadow" x="44" y="46" width="232" height="156" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="320" height="220" rx="28" fill="url(#store-bg)" />
+  <circle cx="62" cy="50" r="44" fill="#A855F7" opacity="0.16" />
+  <circle cx="254" cy="182" r="46" fill="#38BDF8" opacity="0.2" />
+
+  <g filter="url(#store-shadow)">
+    <rect x="64" y="56" width="192" height="108" rx="24" fill="white" fill-opacity="0.08" />
+  </g>
+
+  <path
+    d="M92 96L104 72H216L228 96"
+    stroke="#E2E8F0"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M98 96H222V150C222 156 217 161 211 161H109C103 161 98 156 98 150V96Z"
+    fill="url(#store-accent)"
+  />
+  <path
+    d="M130 150V120C130 114 135 109 141 109H179C185 109 190 114 190 120V150"
+    stroke="#0F172A"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M152 128H168"
+    stroke="#0F172A"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+
+</svg>

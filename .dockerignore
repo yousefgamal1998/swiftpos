@@ -1,0 +1,38 @@
+# Dependencies (rebuilt inside containers)
+node_modules/
+vendor/
+
+# Build output (rebuilt inside containers)
+public/build/
+public/hot
+
+# Version control
+.git/
+.github/
+
+# IDE & editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment (injected at runtime)
+.env
+.env.local
+.env.*.local
+
+# Dev & test artifacts
+tests/
+.phpunit.result.cache
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+*.patch
+
+# Docker (avoid recursive context)
+docker-compose*.yml
+
+# OS files
+Thumbs.db
+.DS_Store

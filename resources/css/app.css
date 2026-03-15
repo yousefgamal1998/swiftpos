@@ -1,0 +1,162 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        color-scheme: light;
+    }
+
+    body {
+        @apply bg-slate-100 text-slate-900 antialiased;
+        font-family: 'Manrope', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    ::selection {
+        @apply bg-emerald-200 text-emerald-950;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    input[type='number'],
+    input[type='date'],
+    input[type='search'],
+    input[type='tel'],
+    input[type='url'],
+    select,
+    textarea {
+        @apply w-full rounded-xl border-slate-300 bg-white/85 text-sm text-slate-700 shadow-sm focus:border-emerald-500 focus:ring-emerald-500;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        @apply text-slate-400;
+    }
+}
+
+@layer components {
+    .pos-panel {
+        @apply rounded-3xl border border-white/30 bg-white/70 shadow-xl backdrop-blur-md backdrop-saturate-150;
+    }
+
+    .pos-panel-solid {
+        @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+    }
+
+    .pos-panel-header {
+        @apply flex flex-wrap items-center justify-between gap-3 border-b border-white/30 px-5 py-4;
+    }
+
+    .pos-panel-title {
+        @apply text-base font-semibold text-slate-900;
+    }
+
+    .pos-panel-subtitle {
+        @apply text-sm text-slate-600;
+    }
+
+    .pos-input {
+        @apply w-full rounded-xl border-slate-300 bg-white/85 text-sm text-slate-700 shadow-sm focus:border-emerald-500 focus:ring-emerald-500;
+    }
+
+    .pos-input-compact {
+        @apply px-3 py-2 text-xs;
+    }
+
+    .pos-btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2;
+    }
+
+    .pos-btn-primary {
+        @apply bg-emerald-600 text-white shadow-sm hover:-translate-y-0.5 hover:bg-emerald-700;
+    }
+
+    .pos-btn-secondary {
+        @apply bg-slate-900 text-white shadow-sm hover:bg-slate-800;
+    }
+
+    .pos-btn-outline {
+        @apply border border-slate-200 bg-white text-slate-700 shadow-sm hover:border-emerald-200 hover:text-emerald-700;
+    }
+
+    .pos-btn-ghost {
+        @apply text-slate-600 hover:text-emerald-700;
+    }
+
+    .pos-btn-danger {
+        @apply border border-rose-200 bg-rose-50 text-rose-700 shadow-sm hover:bg-rose-100;
+    }
+
+    .pos-badge {
+        @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold;
+    }
+
+    .pos-badge-success {
+        @apply bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200;
+    }
+
+    .pos-badge-warning {
+        @apply bg-amber-100 text-amber-700 ring-1 ring-amber-200;
+    }
+
+    .pos-badge-neutral {
+        @apply bg-slate-100 text-slate-600 ring-1 ring-slate-200;
+    }
+
+    .pos-badge-danger {
+        @apply bg-rose-100 text-rose-700 ring-1 ring-rose-200;
+    }
+
+    .pos-table {
+        @apply w-full text-left text-sm;
+    }
+
+    .pos-table thead {
+        @apply bg-slate-50/80 text-xs uppercase tracking-[0.08em] text-slate-500;
+    }
+
+    .pos-table th {
+        @apply px-5 py-3 font-semibold;
+    }
+
+    .pos-table td {
+        @apply px-5 py-3;
+    }
+
+    .pos-table tbody tr {
+        @apply border-t border-slate-100 transition;
+    }
+
+    .pos-table tbody tr:hover {
+        @apply bg-slate-50/70;
+    }
+}
+
+@layer utilities {
+    .shadow-pos-card {
+        box-shadow: 0 12px 30px -20px rgba(15, 23, 42, 0.45);
+    }
+
+    .shadow-pos-card-hover {
+        box-shadow: 0 20px 35px -20px rgba(15, 23, 42, 0.5);
+    }
+
+    @keyframes pos-fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-pos-fade-in {
+        animation: pos-fade-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+}

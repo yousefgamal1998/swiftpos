@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as e,B as n,o as s}from"./app-Dcat4dyb.js";const r={},c={class:"pos-btn pos-btn-danger"};function a(o,_){return s(),e("button",c,[n(o.$slots,"default")])}const p=t(r,[["render",a]]);export{p as D};

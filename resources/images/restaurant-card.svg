@@ -1,0 +1,43 @@
+<svg width="320" height="220" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="restaurant-bg" x1="40" y1="0" x2="300" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" />
+      <stop offset="0.55" stop-color="#134E4A" />
+      <stop offset="1" stop-color="#0EA5E9" />
+    </linearGradient>
+    <linearGradient id="restaurant-accent" x1="78" y1="38" x2="210" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDBA74" />
+      <stop offset="1" stop-color="#F97316" />
+    </linearGradient>
+    <filter id="shadow" x="44" y="38" width="232" height="164" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#020617" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="320" height="220" rx="28" fill="url(#restaurant-bg)" />
+  <circle cx="260" cy="42" r="48" fill="#FCD34D" opacity="0.2" />
+  <circle cx="64" cy="176" r="50" fill="#22C55E" opacity="0.18" />
+
+  <g filter="url(#shadow)">
+    <rect x="64" y="48" width="192" height="124" rx="26" fill="white" fill-opacity="0.08" />
+  </g>
+
+  <path
+    d="M116 66V132M132 66V132M124 66V92"
+    stroke="#E2E8F0"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M200 66C200 80 200 94 200 108C200 116 194 122 186 122H170V66H200Z"
+    fill="url(#restaurant-accent)"
+  />
+  <path
+    d="M160 142H224C228 142 232 146 232 150V154C232 158 228 162 224 162H160C148 162 138 152 138 140C138 128 148 118 160 118H188"
+    stroke="#E2E8F0"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+</svg>
